@@ -12,10 +12,15 @@ class ButtonHome extends StatelessWidget {
     return Row(
       children: [
         Spacer(),
-        SvgPicture.asset(
-          buttons[name]['icon'],
-          semanticsLabel: buttons[name][lang],
-          width: 90 / 3,
+        FittedBox(
+          alignment: Alignment.center,
+          fit: BoxFit.contain,
+          child: SvgPicture.asset(
+            buttons[name]['icon'],
+            semanticsLabel: buttons[name][lang],
+            height: 90 / 3 * 0.7,
+            // height: MediaQuery.of(context).size.height / 90 * 0.8,
+          ),
         ),
         Spacer(),
         FittedBox(

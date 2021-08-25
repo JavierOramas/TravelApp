@@ -12,7 +12,7 @@ const Map buttons = {
     'icon': 'icons/menu/hoteles.svg',
   },
   'cars': {
-    'name_es': 'autos',
+    'name_es': 'Autos',
     'name_en': 'Cars',
     'icon': 'icons/menu/autos.svg',
   },

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:test/src/constants.dart';
 import 'package:test/src/widgets/home_menu_items.dart';
+import 'package:test/src/widgets/home_support_items.dart';
+import 'package:test/src/widgets/home_swiper.dart';
 import 'package:test/src/widgets/serach_buttons.dart';
 
 class HomeWidget extends StatelessWidget {
@@ -41,8 +43,15 @@ class HomeWidget extends StatelessWidget {
           )
         ],
       ),
-      body: SearchButtons(),
+      body: ListView(
+        children: [
+          SearchButtons(),
+          // Spacer(),
+          HomeSwiper(),
+        ],
+      ),
       drawer: Drawer(child: HomeMenuItems()),
+      endDrawer: Drawer(child: HomeSupportItems()),
     );
   }
 }
