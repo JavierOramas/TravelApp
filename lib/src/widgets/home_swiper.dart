@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
-import 'package:test/src/constants.dart';
 import 'package:test/src/resolvers/home_swiper_data.dart';
+
+import '../../main.dart';
 
 class HomeSwiper extends StatelessWidget {
   // const HomeSwiper({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class HomeSwiper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    this.data = get_home_swiper_data();
+    this.data = getHomeSwiperData();
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10.0),
       width: MediaQuery.of(context).size.width * 0.8,
@@ -57,7 +58,7 @@ class HomeSwiper extends StatelessWidget {
                     child: TextButton(
                       style: TextButton.styleFrom(
                           primary: Colors.white, backgroundColor: Colors.red),
-                      onPressed: GoToOffer(data),
+                      onPressed: goToOffer(data),
                       child: Text(
                         lang == 'name_es' ? 'Reservar' : 'Book Now',
                         style: TextStyle(color: Colors.white),
@@ -79,6 +80,6 @@ class HomeSwiper extends StatelessWidget {
   }
 }
 
-GoToOffer(Map data) {
+goToOffer(Map data) {
   return;
 }

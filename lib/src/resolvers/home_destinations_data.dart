@@ -1,4 +1,4 @@
-GetDestinationData(String type) {
+getDestinationData(String type) {
   // if (type == 'city') {
   return {
     'destination_name_en': 'City',

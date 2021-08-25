@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:flutter_svg/svg.dart';
 
+import '../../main.dart';
 import '../constants.dart';
 
 class ButtonHome extends StatelessWidget {

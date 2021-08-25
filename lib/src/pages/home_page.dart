@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:test/src/constants.dart';
-import 'package:test/src/widgets/destination_swiper.dart';
 import 'package:test/src/widgets/destination_widget.dart';
 import 'package:test/src/widgets/home_menu_items.dart';
 import 'package:test/src/widgets/home_support_items.dart';

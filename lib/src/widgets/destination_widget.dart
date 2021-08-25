@@ -3,6 +3,8 @@ import 'package:test/src/constants.dart';
 import 'package:test/src/resolvers/home_destinations_data.dart';
 import 'package:test/src/widgets/swiper_products.dart';
 
+import '../../main.dart';
+
 class DestinationWidget extends StatelessWidget {
   String type = '';
   Map data = {};
@@ -12,7 +14,7 @@ class DestinationWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // print(type);
-    this.data = GetDestinationData(type);
+    this.data = getDestinationData(type);
     return Container(
       // color: appBarIconsColor,
       // margin: EdgeInsets.symmetric(vertical: 5),

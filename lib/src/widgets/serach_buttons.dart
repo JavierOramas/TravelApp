@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/src/static_data/buttons.dart';
 
-import '../constants.dart';
-
 class SearchButtons extends StatelessWidget {
   // const SearchButtons({Key key}) : super(key: key);
 
@@ -20,12 +18,12 @@ class SearchButtons extends StatelessWidget {
             color: Theme.of(context).backgroundColor,
             borderRadius: BorderRadius.all(Radius.circular(15)),
           ),
-          child: GenerateLayout(context)),
+          child: generateLayout(context)),
     );
   }
 }
 
-GenerateLayout(context) {
+generateLayout(context) {
   if (MediaQuery.of(context).size.width >= 500)
     return Column(
       children: [
@@ -34,14 +32,14 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('hotels'),
+                      onTap: searchSection('hotels'),
                       child: Container(
                           margin: EdgeInsets.all(0.5),
                           alignment: Alignment.center,
                           child: ButtonHome('hotels')))),
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('cars'),
+                      onTap: searchSection('cars'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -49,7 +47,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('transfers'),
+                      onTap: searchSection('transfers'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -63,7 +61,7 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('circuits'),
+                      onTap: searchSection('circuits'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -71,7 +69,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('excursions'),
+                      onTap: searchSection('excursions'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -79,7 +77,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('flights'),
+                      onTap: searchSection('flights'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -98,14 +96,14 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('hotels'),
+                      onTap: searchSection('hotels'),
                       child: Container(
                           margin: EdgeInsets.all(0.5),
                           alignment: Alignment.center,
                           child: ButtonHome('hotels')))),
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('cars'),
+                      onTap: searchSection('cars'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -119,7 +117,7 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('transfers'),
+                      onTap: searchSection('transfers'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -127,7 +125,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('circuits'),
+                      onTap: searchSection('circuits'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -141,7 +139,7 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('excursions'),
+                      onTap: searchSection('excursions'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -149,7 +147,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: SearchSecction('flights'),
+                      onTap: searchSection('flights'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -162,4 +160,4 @@ GenerateLayout(context) {
     );
 }
 
-SearchSecction(String type) {}
+searchSection(String type) {}

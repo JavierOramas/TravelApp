@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 const Color fonts = Colors.black;
 const Color appBarIconsColor = Colors.black54;
 
-const String lang = 'name_es';
-
 const Map buttons = {
   'hotels': {
     'name_es': 'Hoteles',

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:test/src/constants.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+
+import '../../main.dart';
 
 class SwiperProducts extends StatelessWidget {
   // List items = [];
@@ -104,7 +105,7 @@ class SwiperProducts extends StatelessWidget {
                           style: TextButton.styleFrom(
                               primary: Colors.white,
                               backgroundColor: Colors.red),
-                          onPressed: GoToHotel(data['items'][index]['id']),
+                          onPressed: goToProduct(data['items'][index]['id']),
                           child: Text(
                             lang == 'name_es' ? 'Reservar' : 'Book Now',
                             style: TextStyle(color: Colors.white),
@@ -124,6 +125,6 @@ class SwiperProducts extends StatelessWidget {
   }
 }
 
-GoToHotel(data) {
+goToProduct(data) {
   return;
 }

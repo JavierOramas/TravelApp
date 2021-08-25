@@ -1,4 +1,4 @@
-get_home_swiper_data() {
+getHomeSwiperData() {
   return {
     'count': 2,
     'items': [
