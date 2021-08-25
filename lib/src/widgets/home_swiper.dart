@@ -71,7 +71,7 @@ class HomeSwiper extends StatelessWidget {
           );
           // return new Image.network(data['items'][index]['image'])
         },
-        pagination: new SwiperPagination(),
+        // pagination: new SwiperPagination(),
         control: new SwiperControl(),
         autoplay: true,
       ),
@@ -79,4 +79,6 @@ class HomeSwiper extends StatelessWidget {
   }
 }
 
-GoToOffer(Map data) {}
+GoToOffer(Map data) {
+  return;
+}

@@ -13,8 +13,8 @@ class SearchButtons extends StatelessWidget {
       child: Container(
           margin: EdgeInsets.only(top: 10),
           height: 120,
-          padding: EdgeInsets.all(3.5),
           width: MediaQuery.of(context).size.width * 0.95,
+          padding: EdgeInsets.all(3.5),
           decoration: BoxDecoration(
             // color: fonts,
             color: Theme.of(context).backgroundColor,
@@ -34,14 +34,14 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: () {},
+                      onTap: SearchSecction('hotels'),
                       child: Container(
                           margin: EdgeInsets.all(0.5),
                           alignment: Alignment.center,
                           child: ButtonHome('hotels')))),
               Expanded(
                   child: InkWell(
-                      onTap: () {},
+                      onTap: SearchSecction('cars'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -49,7 +49,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: () {},
+                      onTap: SearchSecction('transfers'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -63,7 +63,7 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: () => {},
+                      onTap: SearchSecction('circuits'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -71,7 +71,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: () => {},
+                      onTap: SearchSecction('excursions'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -79,7 +79,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: () => {},
+                      onTap: SearchSecction('flights'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -98,14 +98,14 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: () {},
+                      onTap: SearchSecction('hotels'),
                       child: Container(
                           margin: EdgeInsets.all(0.5),
                           alignment: Alignment.center,
                           child: ButtonHome('hotels')))),
               Expanded(
                   child: InkWell(
-                      onTap: () {},
+                      onTap: SearchSecction('cars'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -119,7 +119,7 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: () {},
+                      onTap: SearchSecction('transfers'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -127,7 +127,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: () => {},
+                      onTap: SearchSecction('circuits'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -141,7 +141,7 @@ GenerateLayout(context) {
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                      onTap: () => {},
+                      onTap: SearchSecction('excursions'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -149,7 +149,7 @@ GenerateLayout(context) {
                       ))),
               Expanded(
                   child: InkWell(
-                      onTap: () => {},
+                      onTap: SearchSecction('flights'),
                       child: Container(
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
@@ -161,3 +161,5 @@ GenerateLayout(context) {
       ],
     );
 }
+
+SearchSecction(String type) {}

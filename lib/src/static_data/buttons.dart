@@ -19,11 +19,13 @@ class ButtonHome extends StatelessWidget {
             buttons[name]['icon'],
             semanticsLabel: buttons[name][lang],
             height: 90 / 3 * 0.7,
+            // width: MediaQuery.of(context).size.width,
             // height: MediaQuery.of(context).size.height / 90 * 0.8,
           ),
         ),
         Spacer(),
         FittedBox(
+          // width: MediaQuery.of(context).size.width,
           fit: BoxFit.fill,
           alignment: Alignment.center,
           child: Text(buttons[this.name][lang], style: TextStyle(color: fonts)),
