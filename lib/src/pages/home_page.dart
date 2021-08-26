@@ -4,6 +4,7 @@ import 'package:test/src/widgets/destination_widget.dart';
 import 'package:test/src/widgets/home_menu_items.dart';
 import 'package:test/src/widgets/home_support_items.dart';
 import 'package:test/src/widgets/home_swiper.dart';
+import 'package:test/src/widgets/recomended_blocks.dart';
 import 'package:test/src/widgets/serach_buttons.dart';
 
 class HomeWidget extends StatelessWidget {
@@ -63,6 +64,7 @@ class HomeWidget extends StatelessWidget {
               ],
             ),
           ),
+          RecomendedBlocks(),
         ],
       ),
       drawer: Drawer(child: HomeMenuItems()),

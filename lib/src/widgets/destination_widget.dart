@@ -30,7 +30,7 @@ class DestinationWidget extends StatelessWidget {
               style: TextStyle(
                 // decoration: TextDecoration.underline,
                 color: appBarIconsColor,
-                fontSize: 30,
+                fontSize: fontSizeSectionsHome,
               ),
             ),
           ),

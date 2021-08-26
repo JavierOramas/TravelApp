@@ -58,7 +58,7 @@ class HomeSwiper extends StatelessWidget {
                     child: TextButton(
                       style: TextButton.styleFrom(
                           primary: Colors.white, backgroundColor: Colors.red),
-                      onPressed: goToOffer(data),
+                      onPressed: () => goToOffer(data),
                       child: Text(
                         lang == 'name_es' ? 'Reservar' : 'Book Now',
                         style: TextStyle(color: Colors.white),

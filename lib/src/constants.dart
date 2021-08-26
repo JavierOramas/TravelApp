@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
-const Color fonts = Colors.black;
+const Color fontsColor = Colors.black;
+const Color dividerColors = Colors.grey;
 const Color appBarIconsColor = Colors.black54;
+
+const double fontSizeSectionsHome = 20;
+const double fontSizeBlocksHome = 30;
+
+const Map suggestedDestinations = {
+  'name_en': 'Find the hotel you were looking for!',
+  'name_es': '¡ Encuentra el hotel que estabas buscando !',
+};
 
 const Map buttons = {
   'hotels': {

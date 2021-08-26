@@ -23,6 +23,7 @@ class SwiperProducts extends StatelessWidget {
           return Container(
             margin: EdgeInsets.all(5),
             height: size / 4,
+            // TODO reduce this
             width: MediaQuery.of(context).size.width * 0.8,
             color: Colors.white,
             child: Column(
@@ -105,7 +106,8 @@ class SwiperProducts extends StatelessWidget {
                           style: TextButton.styleFrom(
                               primary: Colors.white,
                               backgroundColor: Colors.red),
-                          onPressed: goToProduct(data['items'][index]['id']),
+                          onPressed: () =>
+                              goToProduct(data['items'][index]['id']),
                           child: Text(
                             lang == 'name_es' ? 'Reservar' : 'Book Now',
                             style: TextStyle(color: Colors.white),

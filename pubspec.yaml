@@ -30,6 +30,7 @@ dependencies:
   flutter_svg: ^0.22.0
   card_swiper: ^1.0.4
   flutter_rating_bar: ^4.0.0
+  bordered_text: ^2.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
