@@ -24,7 +24,10 @@ class SwiperProducts extends StatelessWidget {
             margin: EdgeInsets.all(5),
             height: size / 4,
             // TODO reduce this
-            width: MediaQuery.of(context).size.width * 0.8,
+            width: MediaQuery.of(context).size.width > 600
+                ? MediaQuery.of(context).size.width * 0.4
+                : MediaQuery.of(context).size.width * 0.8,
+            // width: MediaQuery.of(context).size.width * 0.8,
             color: Colors.white,
             child: Column(
               children: [

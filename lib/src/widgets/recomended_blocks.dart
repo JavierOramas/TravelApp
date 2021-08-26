@@ -10,7 +10,6 @@ class RecomendedBlocks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double height = 2 * (MediaQuery.of(context).size.width / 3);
-    ;
     if (MediaQuery.of(context).size.width <= 600)
       height = 3 * (MediaQuery.of(context).size.width / 2);
 
