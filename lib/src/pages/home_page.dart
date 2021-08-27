@@ -48,23 +48,18 @@ class HomeWidget extends StatelessWidget {
       body: ListView(
         children: [
           SearchButtons(),
-          HomeSwiper(),
-          Container(
-            color: appBarIconsColor,
-            child: Column(
-              children: [
-                // Spacer()
-                DestinationWidget('city'),
-                // Divider(),
-                DestinationWidget('sun-beach'),
-                // Divider(),
-                DestinationWidget('islets'),
-                // Divider(),
-                DestinationWidget('nature'),
-              ],
-            ),
-          ),
-          RecomendedBlocks(),
+          // HomeSwiper(),
+          DestinationWidget('city'),
+          // Divider(),
+          // Spacer(),
+          DestinationWidget('sun-beach'),
+          // Text('test')
+          // Divider(),
+          // DestinationWidget('islets'),
+          // Divider(),
+          // DestinationWidget('nature'),
+
+          // RecomendedBlocks(),
         ],
       ),
       drawer: Drawer(child: HomeMenuItems()),

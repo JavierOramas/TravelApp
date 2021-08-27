@@ -13,9 +13,9 @@ class ButtonHome extends StatelessWidget {
     return Row(
       children: [
         Spacer(),
-        FittedBox(
-          alignment: Alignment.center,
-          fit: BoxFit.contain,
+        Expanded(
+          // alignment: Alignment.center,
+          // fit: BoxFit.contain,
           child: SvgPicture.asset(
             buttons[name]['icon'],
             semanticsLabel: buttons[name][lang],
@@ -26,11 +26,12 @@ class ButtonHome extends StatelessWidget {
         ),
         Spacer(),
         FittedBox(
+          clipBehavior: Clip.antiAlias,
           // width: MediaQuery.of(context).size.width,
-          fit: BoxFit.fill,
-          alignment: Alignment.center,
+          // fit: BoxFit.fill,
+          // alignment: Alignment.center,
           child: Text(buttons[this.name][lang],
-              style: TextStyle(color: fontsColor)),
+              style: TextStyle(color: fontsColor, fontSize: 10)),
         ),
         Spacer(),
       ],
