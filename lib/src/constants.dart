@@ -4,7 +4,7 @@ const Color fontsColor = Colors.black;
 const Color dividerColors = Colors.grey;
 const Color appBarIconsColor = Colors.black54;
 
-const double fontSizeSectionsHome = 20;
+const double fontSizeSectionsHome = 30;
 const double fontSizeBlocksHome = 30;
 
 TextStyle style_offer_name = new TextStyle(

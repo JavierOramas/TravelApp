@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test/src/constants.dart';
 import 'package:test/src/widgets/destination_widget.dart';
+import 'package:test/src/widgets/extras/services_cuba.dart';
 import 'package:test/src/widgets/home_menu_items.dart';
 import 'package:test/src/widgets/home_support_items.dart';
 import 'package:test/src/widgets/hotel_offer.dart';
@@ -48,9 +49,10 @@ class HomeWidget extends StatelessWidget {
         children: List<Widget>.generate(1, (index) => SearchButtons()) +
             DestinationWidget(context, 'city') +
             DestinationWidget(context, 'sun-beach') +
+            [HotelOffer()] +
             DestinationWidget(context, 'islets') +
             DestinationWidget(context, 'nature') +
-            [HotelOffer()],
+            [ServicesCuba()],
 
         // RecomendedBlocks(),
       ),
