@@ -7,6 +7,18 @@ const Color appBarIconsColor = Colors.black54;
 const double fontSizeSectionsHome = 20;
 const double fontSizeBlocksHome = 30;
 
+// ignore: non_constant_identifier_names
+TextStyle style_from = new TextStyle(
+  color: Colors.red,
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+);
+// ignore: non_constant_identifier_names
+TextStyle style_price = new TextStyle(
+  color: Colors.black,
+  fontSize: 25,
+);
+
 const Map suggestedDestinations = {
   'name_en': 'Find the hotel you were looking for!',
   'name_es': '¡ Encuentra el hotel que estabas buscando !',
