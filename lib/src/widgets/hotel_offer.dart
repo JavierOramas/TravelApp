@@ -1,43 +1,34 @@
 import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:test/src/constants.dart';
-import 'package:test/src/resolvers/destinantions_offers.dart';
-import 'package:test/src/resolvers/home_destinations_data.dart';
-import 'package:test/src/widgets/swiper_products.dart';
+import 'package:test/src/resolvers/hotel_offer_data.dart';
 
 import '../../main.dart';
 
-DestinationWidget(BuildContext context, String type) {
-  // print(type);
-  Map data = getDestinationData(type);
-  Map offer = getDestinationOffer(type);
-  double height = MediaQuery.of(context).size.height / 2.8;
-  return [
-    Center(
+class HotelOffer extends StatelessWidget {
+  // double height;
+
+  // HotelOffer(this.height);
+
+  @override
+  Widget build(BuildContext context) {
+    Map data = getHotelOfferData();
+    return Center(
       child: Container(
-        margin: EdgeInsets.all(5),
-        height: (height / 3) * 2,
-        width: MediaQuery.of(context).size.width * 0.95,
+        width: MediaQuery.of(context).size.width * 0.98,
+        height: MediaQuery.of(context).size.height / 4,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(offer['image']),
-            fit: BoxFit.fitWidth,
-          ),
+              image: AssetImage(data['image']), fit: BoxFit.cover),
         ),
         child: Column(
           children: [
             Spacer(),
             BorderedText(
               strokeColor: Colors.black,
-              child: Text(
-                offer['name'],
-                style: style_offer_name,
-              ),
+              child: Text(data['name'], style: style_offer_name),
             ),
-            SizedBox(
-              height: (height / 3) * 2 * 0.5,
-            ),
+            Spacer(),
             Row(
               children: [
                 Spacer(),
@@ -52,7 +43,7 @@ DestinationWidget(BuildContext context, String type) {
                       ),
                     ),
                     Text(
-                      offer['price'],
+                      data['price'],
                       style: style_price,
                     )
                   ],
@@ -73,25 +64,10 @@ DestinationWidget(BuildContext context, String type) {
                 Spacer()
               ],
             ),
-            Spacer()
+            Spacer(),
           ],
         ),
       ),
-    ),
-    Container(
-      // height: height /,
-      margin: EdgeInsets.all(5),
-      child: Text(
-        lang == 'name_es'
-            ? data['destination_name_es']
-            : data['destination_name_en'],
-        style: TextStyle(
-          // decoration: TextDecoration.underline,
-          color: appBarIconsColor,
-          fontSize: fontSizeSectionsHome,
-        ),
-      ),
-    ),
-    SwiperProducts(data, height),
-  ];
+    );
+  }
 }

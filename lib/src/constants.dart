@@ -4,8 +4,26 @@ const Color fontsColor = Colors.black;
 const Color dividerColors = Colors.grey;
 const Color appBarIconsColor = Colors.black54;
 
-const double fontSizeSectionsHome = 20;
+const double fontSizeSectionsHome = 30;
 const double fontSizeBlocksHome = 30;
+
+TextStyle style_offer_name = new TextStyle(
+  color: Colors.white,
+  fontSize: 30,
+  fontWeight: FontWeight.bold,
+);
+
+// ignore: non_constant_identifier_names
+TextStyle style_from = new TextStyle(
+  color: Colors.red,
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+);
+// ignore: non_constant_identifier_names
+TextStyle style_price = new TextStyle(
+  color: Colors.black,
+  fontSize: 25,
+);
 
 const Map suggestedDestinations = {
   'name_en': 'Find the hotel you were looking for!',

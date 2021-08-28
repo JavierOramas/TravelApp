@@ -34,6 +34,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('hotels'),
                       child: Container(
+                          height: 90 / 3 * 0.7,
+                          width: (MediaQuery.of(context).size.width * 0.95) / 3,
                           margin: EdgeInsets.all(0.5),
                           alignment: Alignment.center,
                           child: ButtonHome('hotels')))),
@@ -41,6 +43,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('cars'),
                       child: Container(
+                        height: 90 / 3 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 3,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('cars'),
@@ -49,6 +53,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('transfers'),
                       child: Container(
+                        height: 90 / 3 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 3,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('transfers'),
@@ -63,6 +69,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('circuits'),
                       child: Container(
+                        height: 90 / 3 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 3,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('circuits'),
@@ -71,6 +79,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('excursions'),
                       child: Container(
+                        height: 90 / 3 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 3,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('excursions'),
@@ -79,6 +89,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('flights'),
                       child: Container(
+                        height: 90 / 3 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 3,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('flights'),
@@ -98,6 +110,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('hotels'),
                       child: Container(
+                          height: 90 / 2 * 0.7,
+                          width: (MediaQuery.of(context).size.width * 0.95) / 2,
                           margin: EdgeInsets.all(0.5),
                           alignment: Alignment.center,
                           child: ButtonHome('hotels')))),
@@ -105,6 +119,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('cars'),
                       child: Container(
+                        height: 90 / 2 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 2,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('cars'),
@@ -119,6 +135,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('transfers'),
                       child: Container(
+                        height: 90 / 2 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 2,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('transfers'),
@@ -127,6 +145,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('circuits'),
                       child: Container(
+                        height: 90 / 2 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 2,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('circuits'),
@@ -141,6 +161,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('excursions'),
                       child: Container(
+                        height: 90 / 2 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 2,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('excursions'),
@@ -149,6 +171,8 @@ generateLayout(context) {
                   child: InkWell(
                       onTap: searchSection('flights'),
                       child: Container(
+                        height: 90 / 2 * 0.7,
+                        width: (MediaQuery.of(context).size.width * 0.95) / 2,
                         margin: EdgeInsets.all(0.5),
                         alignment: Alignment.center,
                         child: ButtonHome('flights'),
