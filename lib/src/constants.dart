@@ -7,6 +7,12 @@ const Color appBarIconsColor = Colors.black54;
 const double fontSizeSectionsHome = 20;
 const double fontSizeBlocksHome = 30;
 
+TextStyle style_offer_name = new TextStyle(
+  color: Colors.white,
+  fontSize: 30,
+  fontWeight: FontWeight.bold,
+);
+
 // ignore: non_constant_identifier_names
 TextStyle style_from = new TextStyle(
   color: Colors.red,

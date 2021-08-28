@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../main.dart';
 import '../constants.dart';
 
+// ignore: must_be_immutable
 class ButtonHome extends StatelessWidget {
   ButtonHome(this.name);
   String name;

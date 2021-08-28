@@ -3,8 +3,7 @@ import 'package:test/src/constants.dart';
 import 'package:test/src/widgets/destination_widget.dart';
 import 'package:test/src/widgets/home_menu_items.dart';
 import 'package:test/src/widgets/home_support_items.dart';
-import 'package:test/src/widgets/home_swiper.dart';
-import 'package:test/src/widgets/recomended_blocks.dart';
+import 'package:test/src/widgets/hotel_offer.dart';
 import 'package:test/src/widgets/serach_buttons.dart';
 
 class HomeWidget extends StatelessWidget {
@@ -46,21 +45,14 @@ class HomeWidget extends StatelessWidget {
         ],
       ),
       body: ListView(
-        children: [
-          SearchButtons(),
-          // HomeSwiper(),
-          DestinationWidget('city'),
-          // Divider(),
-          // Spacer(),
-          DestinationWidget('sun-beach'),
-          // Text('test')
-          // Divider(),
-          // DestinationWidget('islets'),
-          // Divider(),
-          // DestinationWidget('nature'),
+        children: List<Widget>.generate(1, (index) => SearchButtons()) +
+            DestinationWidget(context, 'city') +
+            DestinationWidget(context, 'sun-beach') +
+            DestinationWidget(context, 'islets') +
+            DestinationWidget(context, 'nature') +
+            [HotelOffer()],
 
-          // RecomendedBlocks(),
-        ],
+        // RecomendedBlocks(),
       ),
       drawer: Drawer(child: HomeMenuItems()),
       endDrawer: Drawer(child: HomeSupportItems()),
